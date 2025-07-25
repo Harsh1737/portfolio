@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Personal portfolio of Harsh, showcasing skills, projects, and experience."
+        />
+        <meta
+            name="keywords"
+            content="Harsh, Portfolio, Web Developer, Designer, Projects, Resume"
+        />
+        <meta name="author" content="Harsh" />
+        <meta property="og:title" content="Harsh's Portfolio" />
+        <meta
+            property="og:description"
+            content="Explore Harsh's projects, skills, and experience."
+        />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="./assets/harsh_.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>| HARSH |</title>
+    </head>
+    <body class="bg-gray-100">
+        <!-- Navigation Bar -->
+        <nav
+            class="z-30 flex items-center justify-between p-4 lg:p-5 fixed top-4 w-[90%] left-[5%] bg-white/30 backdrop-blur-lg rounded-lg lg:rounded-2xl shadow-xl lg:shadow-2xl"
+        >
+            <!-- Logo-->
+            <a href="#home">
+                <div
+                    class="flex items-center space-x-2 duration-500 hover:scale-105 pl-5 lg:pl-0"
+                >
+                    <img
+                        src="./assets/logo.png"
+                        alt="Logo"
+                        class="w-12 h-12 rounded-full hidden lg:block"
+                    />
+                    <div
+                        class="logo-text text-black text-2xl lg:text-3xl border-b-2 border-black tracking-wide lg:border-none lg:tracking-normal"
+                    >
+                        HARSH
+                    </div>
+                </div>
+            </a>
+            <!-- Hamburger menu for mobile -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="text-black focus:outline-none">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACN0lEQVR4nO2YPU8VQRSGHxGRzxY6hYRSC/kN1gYLjD+BiuAHgXvR29gbKmMsjJWdUREhCsZECwkqkKAmQuwEwWhLdeGYSQ7JZAMyM3v37hD2Td7uzp7n3ZndPedCoUKFjq3OA9eBl8AXYAvYAeQQ7+hvzZop4Bpwrp7gF4EPDqC+XgQGgBNZgXcCsxmAS8KvtVZN1Qes1wFe1KbWhVrB9wC/6ggv6t9Ab1r4JuDrIYVKQBtQziDECnAqTYBhhyLt+tuOjHZiKBS+FfjrUKCsIcYz2pU/QEtIgP4URWu9K5dCAjxKUXC/XUnjhyEBljI60yH+FBJgMwJwUW+EBNiOAFzUhsVLZ4BqBOBiNYDdPgHuWItnyE/TFodhctaytfAy+ak/0a06a81aWAFuABPAE2Ae+AF8B15oC3wysb4LGAQeA6+AB/oub9xnprgLLOg157XGhNasWBymnrPuB/QsY/oFfvuf52ddgc0QMwnsetS45xOgUxPn/fCKdfe9Z4T2CMBFbVqSIEkkDtaRDdAMjEQALuqbyuQk03u/iQBaEp5zDVGKAFYO8KhLgG/WgpLOxXmpKTHVmfncqwvdm6zyVIdvV7pqLShHsAPjvu3E7QjOuhzgWy4BTgPvI4CVhN8pm5OaIxtoqj7fgT1tRAAu6p8EaDICcFE/DQlwNQJwUV8JCdAAfI4AfkFZgv9a38oRfhM4Gwpvh/iY053vpkZq0Gfiuc61Wbxiq3rtZ3rmg49NoUKFODr6B7MLQ6exeSD6AAAAAElFTkSuQmCC"
+                        alt="hamburger"
+                        id="menu-icon"
+                        data-state="hamburger"
+                        class="w-8 h-8"
+                    />
+                </button>
+            </div>
+            <!-- Navigation links -->
+            <ul class="space-x-6 hidden lg:flex">
+                <li
+                    id="nav-home"
+                    class="transform transition duration-500 ease-out"
+                >
+                    <a
+                        href="#home"
+                        class="nav-text text-white hidden lg:block lg:text-lg xl:text-2xl hover:text-black transition duration-300 ease-in-out transform hover:scale-110"
+                        >Home</a
+                    >
+                </li>
+                <li
+                    id="nav-about"
+                    class="transform transition duration-500 ease-out"
+                >
+                    <a
+                        href="#about"
+                        class="nav-text text-white hidden lg:block lg:text-lg xl:text-2xl hover:text-black transition duration-300 ease-in-out transform hover:scale-110"
+                        >About</a
+                    >
+                </li>
+                <li
+                    id="nav-skills"
+                    class="transform transition duration-500 ease-out"
+                >
+                    <a
+                        href="#skills"
+                        class="nav-text text-white hidden lg:block lg:text-lg xl:text-2xl hover:text-black transition duration-300 ease-in-out transform hover:scale-110"
+                        >Skills</a
+                    >
+                </li>
+                <li
+                    id="nav-projects"
+                    class="transform transition duration-500 ease-out"
+                >
+                    <a
+                        href="#projects"
+                        class="nav-text text-white hidden lg:block lg:text-lg xl:text-2xl hover:text-black transition duration-300 ease-in-out transform hover:scale-110"
+                        >Projects</a
+                    >
+                </li>
+                <li
+                    id="nav-contacts"
+                    class="transform transition duration-500 ease-out"
+                >
+                    <a
+                        href="#contacts"
+                        class="nav-text text-white hidden lg:block lg:text-lg xl:text-2xl hover:text-black transition duration-300 ease-in-out transform hover:scale-110"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Homepage -->
+        <section id="home" class="black_white_bg">
+            <div class="left">
+                <div class="l-info relative text-sm text-black mr-auto mt-auto">
+                    <div class="flex">
+                        <svg
+                            width="14"
+                            height="28"
+                            viewBox="0 0 14 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M9.36503 13.445H2.33003C2.45003 6.44 3.83003 5.285 8.13503 2.735C8.63003 2.435 8.79503 1.805 8.49503 1.295C8.19503 0.800003 7.56503 0.635003 7.05503 0.935003C1.98503 3.935 0.215027 5.765 0.215027 14.495V22.58C0.215027 25.145 2.30003 27.215 4.85003 27.215H9.35003C11.99 27.215 13.985 25.22 13.985 22.58V18.08C14 15.44 12.005 13.445 9.36503 13.445Z"
+                                fill="#2F2F2F"
+                            />
+                        </svg>
+                        <svg
+                            width="14"
+                            height="28"
+                            viewBox="0 0 14 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M9.36503 13.445H2.33003C2.45003 6.44 3.83003 5.285 8.13503 2.735C8.63003 2.435 8.79503 1.805 8.49503 1.295C8.19503 0.800003 7.56503 0.635003 7.05503 0.935003C1.98503 3.935 0.215027 5.765 0.215027 14.495V22.58C0.215027 25.145 2.30003 27.215 4.85003 27.215H9.35003C11.99 27.215 13.985 25.22 13.985 22.58V18.08C14 15.44 12.005 13.445 9.36503 13.445Z"
+                                fill="#2F2F2F"
+                            />
+                        </svg>
+                    </div>
+                    <p class="relative mt-2">
+                        A passionate DevOps Engineer with a knack for<br />
+                        automation and cloud technologies.
+                    </p>
+                    <p class="relative mt-2">
+                        Living in the cloud — currently
+                        <b>terraforming AWS</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="right text-white">
+                <div class="relative mt-auto ml-auto">
+                    <svg
+                        width="160"
+                        height="32"
+                        viewBox="0 0 160 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M23.8912 19.0933C23.5459 19.428 23.3872 19.912 23.4659 20.3867L24.6512 26.9467C24.7512 27.5027 24.5165 28.0653 24.0512 28.3867C23.5952 28.72 22.9885 28.76 22.4912 28.4933L16.5859 25.4133C16.3805 25.304 16.1525 25.2453 15.9192 25.2387H15.5579C15.4325 25.2573 15.3099 25.2973 15.1979 25.3587L9.29118 28.4533C8.99918 28.6 8.66852 28.652 8.34452 28.6C7.55518 28.4507 7.02852 27.6987 7.15785 26.9053L8.34452 20.3453C8.42318 19.8667 8.26452 19.38 7.91918 19.04L3.10452 14.3733C2.70185 13.9827 2.56185 13.396 2.74585 12.8667C2.92452 12.3387 3.38052 11.9533 3.93118 11.8667L10.5579 10.9053C11.0619 10.8533 11.5045 10.5467 11.7312 10.0933L14.6512 4.10666C14.7205 3.97333 14.8099 3.85066 14.9179 3.74666L15.0378 3.65333C15.1005 3.58399 15.1725 3.52666 15.2525 3.47999L15.3979 3.42666L15.6245 3.33333H16.1858C16.6872 3.38533 17.1285 3.68533 17.3592 4.13333L20.3179 10.0933C20.5312 10.5293 20.9459 10.832 21.4245 10.9053L28.0512 11.8667C28.6112 11.9467 29.0792 12.3333 29.2645 12.8667C29.4392 13.4013 29.2885 13.988 28.8779 14.3733L23.8912 19.0933Z"
+                            fill="white"
+                            fill-opacity="0.3"
+                        />
+                        <path
+                            d="M55.8912 19.0933C55.5459 19.428 55.3872 19.912 55.4659 20.3867L56.6512 26.9467C56.7512 27.5027 56.5165 28.0653 56.0512 28.3867C55.5952 28.72 54.9885 28.76 54.4912 28.4933L48.5858 25.4133C48.3805 25.304 48.1525 25.2453 47.9192 25.2387H47.5578C47.4325 25.2573 47.3099 25.2973 47.1979 25.3587L41.2912 28.4533C40.9992 28.6 40.6685 28.652 40.3445 28.6C39.5552 28.4507 39.0285 27.6987 39.1579 26.9053L40.3445 20.3453C40.4232 19.8667 40.2645 19.38 39.9192 19.04L35.1045 14.3733C34.7019 13.9827 34.5619 13.396 34.7459 12.8667C34.9245 12.3387 35.3805 11.9533 35.9312 11.8667L42.5578 10.9053C43.0619 10.8533 43.5045 10.5467 43.7312 10.0933L46.6512 4.10666C46.7205 3.97333 46.8099 3.85066 46.9179 3.74666L47.0378 3.65333C47.1005 3.58399 47.1725 3.52666 47.2525 3.47999L47.3979 3.42666L47.6245 3.33333H48.1859C48.6872 3.38533 49.1285 3.68533 49.3592 4.13333L52.3179 10.0933C52.5312 10.5293 52.9459 10.832 53.4245 10.9053L60.0512 11.8667C60.6112 11.9467 61.0792 12.3333 61.2645 12.8667C61.4392 13.4013 61.2885 13.988 60.8779 14.3733L55.8912 19.0933Z"
+                            fill="white"
+                            fill-opacity="0.3"
+                        />
+                        <path
+                            d="M87.8912 19.0933C87.5459 19.428 87.3872 19.912 87.4659 20.3867L88.6512 26.9467C88.7512 27.5027 88.5165 28.0653 88.0512 28.3867C87.5952 28.72 86.9885 28.76 86.4912 28.4933L80.5858 25.4133C80.3805 25.304 80.1525 25.2453 79.9192 25.2387H79.5578C79.4325 25.2573 79.3099 25.2973 79.1979 25.3587L73.2912 28.4533C72.9992 28.6 72.6685 28.652 72.3445 28.6C71.5552 28.4507 71.0285 27.6987 71.1579 26.9053L72.3445 20.3453C72.4232 19.8667 72.2645 19.38 71.9192 19.04L67.1045 14.3733C66.7019 13.9827 66.5619 13.396 66.7459 12.8667C66.9245 12.3387 67.3805 11.9533 67.9312 11.8667L74.5578 10.9053C75.0619 10.8533 75.5045 10.5467 75.7312 10.0933L78.6512 4.10666C78.7205 3.97333 78.8099 3.85066 78.9179 3.74666L79.0378 3.65333C79.1005 3.58399 79.1725 3.52666 79.2525 3.47999L79.3979 3.42666L79.6245 3.33333H80.1859C80.6872 3.38533 81.1285 3.68533 81.3592 4.13333L84.3179 10.0933C84.5312 10.5293 84.9459 10.832 85.4245 10.9053L92.0512 11.8667C92.6112 11.9467 93.0792 12.3333 93.2645 12.8667C93.4392 13.4013 93.2885 13.988 92.8779 14.3733L87.8912 19.0933Z"
+                            fill="white"
+                            fill-opacity="0.3"
+                        />
+                        <path
+                            d="M119.891 19.0933C119.546 19.428 119.387 19.912 119.466 20.3867L120.651 26.9467C120.751 27.5027 120.517 28.0653 120.051 28.3867C119.595 28.72 118.989 28.76 118.491 28.4933L112.586 25.4133C112.381 25.304 112.153 25.2453 111.919 25.2387H111.558C111.433 25.2573 111.31 25.2973 111.198 25.3587L105.291 28.4533C104.999 28.6 104.669 28.652 104.345 28.6C103.555 28.4507 103.029 27.6987 103.158 26.9053L104.345 20.3453C104.423 19.8667 104.265 19.38 103.919 19.04L99.1045 14.3733C98.7019 13.9827 98.5619 13.396 98.7459 12.8667C98.9245 12.3387 99.3805 11.9533 99.9312 11.8667L106.558 10.9053C107.062 10.8533 107.505 10.5467 107.731 10.0933L110.651 4.10666C110.721 3.97333 110.81 3.85066 110.918 3.74666L111.038 3.65333C111.101 3.58399 111.173 3.52666 111.253 3.47999L111.398 3.42666L111.625 3.33333H112.186C112.687 3.38533 113.129 3.68533 113.359 4.13333L116.318 10.0933C116.531 10.5293 116.946 10.832 117.425 10.9053L124.051 11.8667C124.611 11.9467 125.079 12.3333 125.265 12.8667C125.439 13.4013 125.289 13.988 124.878 14.3733L119.891 19.0933Z"
+                            fill="white"
+                            fill-opacity="0.3"
+                        />
+                        <path
+                            d="M151.891 19.0933C151.546 19.428 151.387 19.912 151.466 20.3867L152.651 26.9467C152.751 27.5027 152.517 28.0653 152.051 28.3867C151.595 28.72 150.989 28.76 150.491 28.4933L144.586 25.4133C144.381 25.304 144.153 25.2453 143.919 25.2387H143.558C143.433 25.2573 143.31 25.2973 143.198 25.3587L137.291 28.4533C136.999 28.6 136.669 28.652 136.345 28.6C135.555 28.4507 135.029 27.6987 135.158 26.9053L136.345 20.3453C136.423 19.8667 136.265 19.38 135.919 19.04L131.105 14.3733C130.702 13.9827 130.562 13.396 130.746 12.8667C130.925 12.3387 131.381 11.9533 131.931 11.8667L138.558 10.9053C139.062 10.8533 139.505 10.5467 139.731 10.0933L142.651 4.10666C142.721 3.97333 142.81 3.85066 142.918 3.74666L143.038 3.65333C143.101 3.58399 143.173 3.52666 143.253 3.47999L143.398 3.42666L143.625 3.33333H144.186C144.687 3.38533 145.129 3.68533 145.359 4.13333L148.318 10.0933C148.531 10.5293 148.946 10.832 149.425 10.9053L156.051 11.8667C156.611 11.9467 157.079 12.3333 157.265 12.8667C157.439 13.4013 157.289 13.988 156.878 14.3733L151.891 19.0933Z"
+                            fill="white"
+                            fill-opacity="0.3"
+                        />
+                    </svg>
+                    <p class="relative r-info mt-3">+1 Years</p>
+                    <p class="relative text-right">Experience</p>
+                </div>
+            </div>
+            <!-- Mini-hero text -->
+            <div
+                class="absolute hidden md:block mini-header pb-36 whitespace-nowrap scale-x-120 scale-y-75 transform -translate-x-1/2"
+            >
+                I’m Harsh
+            </div>
+            <!-- Hero text -->
+            <div
+                class="absolute text-white mix-blend-difference w-[90%] md:w-full translate-y-[50vh] md:translate-y-0"
+            >
+                <h1
+                    class="main-header md:whitespace-nowrap text-center md:text-left md:translate-y-0 hidden sm:block"
+                >
+                    FULL-STACK&nbsp; DEVELOPER
+                </h1>
+                <h1
+                    class="block md:hidden text-white text-[clamp(2.5rem,5vw,5rem)] leading-tight font-bold flex flex-wrap gap-x-2 gap-y-2"
+                >
+                    <span
+                        class="font-serif italic tracking-wide text-[clamp(2rem,4vw,3rem)] leading-[1.3]"
+                    >
+                        I&#x27;m a
+                    </span>
+                    <span class="uppercase font-semibold">FULL-STACK</span>
+                    <span
+                        class="uppercase flex-1 text-right block font-semibold"
+                        >DEVELOPER</span
+                    >
+                    <span class="italic font-light">&</span>
+                    <span class="uppercase font-semibold">SOFTWARE</span>
+                    <span
+                        class="uppercase flex-1 text-right block font-semibold"
+                        >ENGINEER</span
+                    >
+                </h1>
+            </div>
+            <!-- hero img -->
+            <div
+                class="hidden md:absolute md:flex justify-center sm:items-center md:items-end h-screen"
+            >
+                <img
+                    src="./assets/hero.png"
+                    alt="Hero Image"
+                    class="object-contain w-2/3 lg:w-5/6 xl:scale-120"
+                />
+            </div>
+            <div
+                class="absolute md:hidden -translate-y-[100%] flex justify-center"
+            >
+                <img
+                    src="./assets/hero.png"
+                    alt="Hero Image"
+                    class="object-contain w-6/7"
+                />
+            </div>
+        </section>
+
+        <!-- About me -->
+        <section id="about" class="black_white_bg">
+            <div class="left">
+                <div
+                    class="animated-about-img bg-amber-900 w-96 h-96 rounded-full backdrop-blur-lg shadow-2xl"
+                >
+                    <img
+                        src="./assets/about_me.jpg"
+                        alt="Harsh's Image"
+                        class="object-cover animated-about-img w-96 h-96 rounded-full backdrop-blur-lg shadow-2xl"
+                    />
+                </div>
+            </div>
+            <div class="right">
+                <div class="about-section w-full p-6 lg:p-8">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-2">
+                        Behind the Code
+                    </h2>
+                    <p class="text-md md:text-lg md:text-base">
+                        I’m a self-taught
+                        <span class="highlight">Full-Stack Developer</span> and
+                        <span class="highlight">DevOps Engineer</span> with a
+                        passion for building and scaling reliable systems. With
+                        a strong foundation in
+                        <span class="highlight">Node.js</span>,
+                        <span class="highlight">Python</span>, and modern
+                        <span class="highlight">backend architecture</span>, I
+                        love turning ideas into impactful digital solutions.
+                    </p>
+                    <p class="text-md md:text-lg md:text-base mt-2 md:mt-4">
+                        My journey has always been fueled by a curiosity to
+                        simplify complexity and improve workflows through
+                        <span class="highlight">automation</span> and
+                        <span class="highlight">cloud-native solutions</span>.
+                        I’m experienced in <span class="highlight">AWS</span>,
+                        <span class="highlight">Docker</span>, and
+                        <span class="highlight">CI/CD pipelines</span>, and
+                        thrive in dynamic environments that demand scalability,
+                        speed, and security.
+                    </p>
+                    <p
+                        class="text-md md:text-lg md:text-base mt-2 md:mt-4 hidden md:block"
+                    >
+                        Whether it's building APIs, deploying microservices, or
+                        optimizing cloud infrastructure, I enjoy crafting
+                        systems that are
+                        <span class="highlight">resilient</span>,
+                        <span class="highlight">secure</span>, and
+                        <span class="highlight">developer-friendly</span>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="black_white_bg">
+            <div class="left"></div>
+            <div class="right"></div>
+            <!-- Skill Carousel Section -->
+            <div class="scroller-wrapper">
+                <!-- Text Scroller -->
+                <div class="text-scroller">
+                    <div class="scroll-track left-one">
+                        • React • AWS • DevOps • Node.js • Docker • Tailwind •
+                        Python • Linux •
+                    </div>
+                    <div class="scroll-track right-one">
+                        • React • AWS • DevOps • Node.js • Docker • Tailwind •
+                        Python • Linux •
+                    </div>
+                    <div
+                        class="absolute h-full min-w-full flex items-center justify-center bg-black/40 gap-6 py-10 overflow-hidden rounded-2xl"
+                    >
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-max flex flex-col items-center h-[275px] px-1 py-1 mt-2 animate-scroll hover:[animation-play-state:paused] transition-all duration-700 skill-card shrink-0 border-2 border-black rounded-2xl border-b-[6px] border-r-[6px] bg-gray-500"
+                        >
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[65%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <img
+                                    src="./assets/chess.jpeg"
+                                    class="object-cover w-[160px] h-[150px] rounded-2xl"
+                                />
+                            </div>
+                            <div
+                                class="rounded-2xl w-full border-2 border-black h-[35%] m-1 border-b-[6px] border-r-[6px]"
+                            >
+                                <div>hi</div>
+                                <div>intermediate</div>
+                                <div>3 yr</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fade edges -->
+                <div class="fade fade-left"></div>
+                <div class="fade fade-right"></div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="black_white_bg">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div
+                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full flex bg-transparent min-h-screen flex items-center justify-center px-4"
+            >
+                <div
+                    id="cardContainer"
+                    class="flex gap-4 w-full max-w-6xl h-[500px]"
+                >
+                    <!-- Card 1 -->
+                    <div
+                        class="card bg-[url('./assets/youtube_project.jpeg')] bg-cover bg-center rounded-3xl relative group overflow-hidden cursor-pointer"
+                    >
+                        <a
+                            href="https://github.com/Harsh1737/Youtube"
+                            target="_blank"
+                        >
+                            <div
+                                class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center"
+                            >
+                                <h2
+                                    class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                >
+                                    Youtube Backend Clone
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="card active bg-[url('./assets/version_project.jpeg')] bg-cover bg-center rounded-3xl relative group overflow-hidden cursor-pointer"
+                    >
+                        <a
+                            href="https://github.com/Harsh1737/Custom-git"
+                            target="_blank"
+                        >
+                            <div
+                                class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center"
+                            >
+                                <h2
+                                    class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                >
+                                    Version Control System
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="card bg-[url('./assets/chess.jpeg')] bg-cover bg-center rounded-3xl relative group overflow-hidden cursor-pointer"
+                    >
+                        <a
+                            href="https://github.com/Harsh1737/chess-sem6"
+                            target="_blank"
+                        >
+                            <div
+                                class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center"
+                            >
+                                <h2
+                                    class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                >
+                                    MyChess.com
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="card bg-[url('./assets/freelancing_project.jpeg')] bg-cover bg-center rounded-3xl relative group overflow-hidden cursor-pointer"
+                    >
+                        <a
+                            href="https://github.com/Harsh1737/SIH-24"
+                            target="_blank"
+                        >
+                            <div
+                                class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center"
+                            >
+                                <h2
+                                    class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                >
+                                    Freelancing Platform
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="contacts" class="black_white_bg">
+            <div class="left"></div>
+            <div class="right">
+                <a href="#home">
+                    <div
+                        class="absolute bottom-5 right-5 h-10 w-10 hover:bg-[#7dd3fc] bg-[#f177a4] text-black p-1.5 rounded-xl transform duration-700"
+                    >
+                        <div
+                            class="flex items-center justify-center h-full gap-2"
+                        >
+                            <span class="">⚽︎</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="absolute bg-transparent text-[#d0cfff] py-10 px-6 sm:gap-6 lg:gap-1"
+            >
+                <div class="max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-1">
+                    <!-- 1st col -->
+                    <div
+                        class="bg-[#120f3d] rounded-xl p-6 shadow-lg border-4 border-[#c6caff]"
+                    >
+                        <div class="h-10"></div>
+                        <h2 class="text-2xl font-semibold mb-2">
+                            Let's Connect
+                        </h2>
+                        <p class="text-sm mb-4 text-[#c0bbf3]">
+                            Stay in touch for updates on my latest projects and
+                            tech thoughts.
+                        </p>
+                        <div
+                            class="relative flex flex-col sm:flex-row rounded-xl"
+                        >
+                            <input
+                                type="email"
+                                placeholder="things@things.stuff"
+                                class="relative flex-1 rounded-xl px-4 py-2 bg-[#d3d3ff] text-[#4e4a7f] placeholder:text-[#8680b3] outline-none focus:ring-2 focus:ring-pink-300"
+                            />
+                            <a
+                                href="mailto:harshbit10@gmail.com"
+                                class="bg-[#f177a4] text-black px-3 py-2 font-medium rounded-xl hover:brightness-110 absolute right-0 duration-700 hover:bg-[#ed83aa]"
+                            >
+                                CONNECT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block sm:hidden h-10"></div>
+
+                    <!-- 2nd col -->
+                    <div
+                        class="grid grid-cols-1 gap-1 sm:gap-2 transition-transform duration-700 gap-2 rounded-xl border-4 border-[#c6caff]"
+                        style="background: #121826"
+                    >
+                        <div
+                            class="relative space-y-0 bg-[#120f3d] rounded-lg border-2 border-[#120f3d]"
+                        >
+                            <a
+                                href="#home"
+                                class="group flex items-center px-3 py-2 bg-[#cbc7ff] rounded-lg text-[#1c1844] font-medium hover:bg-[#f177a4] transition border-2 border-black"
+                            >
+                                <span
+                                    class="inline-block h-1 w-1 rounded-full bg-[#1c1844] mr-2 transition-all duration-200 group-hover:bg-[#f177a4]"
+                                ></span>
+                                <span
+                                    class="transition-all duration-200 group-hover:pl-4"
+                                    >Home</span
+                                >
+                            </a>
+                            <a
+                                href="#about"
+                                class="group flex items-center px-3 py-2 bg-[#cbc7ff] rounded-lg text-[#1c1844] font-medium hover:bg-[#f177a4] transition border-2 border-black"
+                            >
+                                <span
+                                    class="inline-block h-1 w-1 rounded-full bg-[#1c1844] mr-2 transition-all duration-200 group-hover:bg-[#f177a4]"
+                                ></span>
+                                <span
+                                    class="transition-all duration-200 group-hover:pl-4"
+                                    >About me</span
+                                >
+                            </a>
+                            <a
+                                href="#skills"
+                                class="group flex items-center px-3 py-2 bg-[#cbc7ff] rounded-lg text-[#1c1844] font-medium hover:bg-[#f177a4] transition border-2 border-black"
+                            >
+                                <span
+                                    class="inline-block h-1 w-1 rounded-full bg-[#1c1844] mr-2 transition-all duration-200 group-hover:bg-[#f177a4]"
+                                ></span>
+                                <span
+                                    class="transition-all duration-200 group-hover:pl-4"
+                                    >Skills</span
+                                >
+                            </a>
+                            <a
+                                href="#projects"
+                                class="group flex items-center px-3 py-2 bg-[#cbc7ff] rounded-lg text-[#1c1844] font-medium hover:bg-[#f177a4] transition border-2 border-black"
+                            >
+                                <span
+                                    class="inline-block h-1 w-1 rounded-full bg-[#1c1844] mr-2 transition-all duration-200 group-hover:bg-[#f177a4]"
+                                ></span>
+                                <span
+                                    class="transition-all duration-200 group-hover:pl-4"
+                                    >Projects</span
+                                >
+                            </a>
+                        </div>
+                        <div
+                            class="space-y-0 bg-[#120f3d] rounded-lg border-2 border-[#120f3d]"
+                        >
+                            <a
+                                href="#contacts"
+                                class="group flex items-center px-3 py-2 bg-[#cbc7ff] rounded-lg text-[#1c1844] font-medium hover:bg-[#f177a4] transition border-2 border-black"
+                            >
+                                <span
+                                    class="inline-block h-1 w-1 rounded-full bg-[#1c1844] mr-2 transition-all duration-200 group-hover:bg-[#f177a4]"
+                                ></span>
+                                <span
+                                    class="transition-all duration-200 group-hover:pl-4"
+                                    >Contact</span
+                                >
+                            </a>
+                            <a
+                                href="#"
+                                class="group flex items-center px-3 py-2 bg-[#cbc7ff] rounded-lg text-[#1c1844] font-medium hover:bg-[#f177a4] transition border-2 border-black"
+                            >
+                                <span
+                                    class="inline-block h-1 w-1 rounded-full bg-[#1c1844] mr-2 transition-all duration-200 group-hover:bg-[#f177a4]"
+                                ></span>
+                                <span
+                                    class="transition-all duration-200 group-hover:pl-4"
+                                    >A Bunch of Things</span
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block sm:hidden h-10"></div>
+                    <!-- 3rd col -->
+                    <div class="rounded-xl p-4 bg-[#cbc7ff] text-[#1c1844]">
+                        <div class="md:h-20"></div>
+
+                        <h3 class="text-lg font-semibold mb-1">Follow me</h3>
+                        <div
+                            class="grid grid-cols-3 gap-1 bg-[#1c1844] p-1 rounded-lg"
+                        >
+                            <a
+                                href="https://www.linkedin.com/in/harsh1737/"
+                                target="_blank"
+                                class="relative group flex flex-col items-center p-1 bg-[#cbc7ff] border border-black rounded-lg text-[#1c1844] hover:bg-[#f177a4] transition"
+                            >
+                                <span
+                                    class="h-1 w-1 rounded-full bg-[#1c1844] mb-1 group-hover:hidden ml-auto"
+                                ></span>
+                                <div>
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVR4nO2ZvUoDQRRGjyh2/oC2goW+ge+g4C5aikI6S1/BRgJ5EJ/BThP1QewUfxB0U6W5sjCNYXZnZi32jtwDXxPuzH6HzWazCRiG0ZUjYAJMAek5U2AMlKkSIwXlpSHDlDMhylPEiEwUFJVA7mJEKgVFJZDvGBHJJEH6LigmMkfb4hfgBNhwOQPechTZV/RxHaRt8apnfi1HkdIzX+Qo8g4MgE2X+hp5zVFEFCVI3wXFRObosjhl5tHdi7aAZWAF2AMugY8cROob50Hg2OvAjXaRnZiDA0vAg2aRFLaBWQ4iixEz15pFLoBnN/cEnLfMnmoVOU58/t7VKnLfsGf9GwEdvoz2JvLZsGf9uo8FrSJ/3VdMBBPxYiKYCCYiJuJHTIT2xZoS5N+IVApKSiBfMSJjBUUlkNsYkVJBUQnkkEiGCspKQ65IpHD/nmq4Zir3doo+E4Zh8IsfFdRDh8Z3YCsAAAAASUVORK5CYII="
+                                        alt="linkedin"
+                                    />
+                                </div>
+                                <p class="relative" style="font-size: 10px">
+                                    Linkedin
+                                </p>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/har.ssh_/"
+                                target="_blank"
+                                class="relative group flex flex-col items-center p-1 bg-[#cbc7ff] border border-black rounded-lg text-[#1c1844] hover:bg-[#f177a4] transition"
+                            >
+                                <span
+                                    class="h-1 w-1 rounded-full bg-[#1c1844] mb-1 group-hover:hidden ml-auto"
+                                ></span>
+                                <div>
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBklEQVR4nO2YS05CMRSG/5DABHArIgOVHUhMFA1hS75GPliBypJ8oE5EF6AwkAk1Tc6AnNykpz0tXJJ+SRNyLz2PS/n/3gKZTCazSdQADACMALwAmAEwyjGjWCOKbXMk4RTAR4SCXeMdwEnMwisALldQuGHjgnKruVpD8YbGeYxlw4P+AbgGsAegHuEB1SnWLYB5Qb5eaOBawZr/ArCNdLQox3LONwDVkGCDgiefovhDKnoCoAtgp+CX6IcEHrEgdtmkYLKU45Ou3bHcDyGBX1mQ3UCfcOn8pKCBfZbbzvfmlwVpRPIJrvNdasIWf0DXmmyOrcUbnji2T7h0XppfHeAqkc6bVTQg8YlQnTepGwjxCR+dN6kbCPUJqc6b1A1ofEKi8yZ1AyE+AQ+dN6kbmHr6xDINNne6aQ1ssbk/ZVhCViqldMqwhB7Z/RuP2EM2974sMmp13kW7LDJao40ZN7KWo/hvNme8LiMD7Sr59+a0bejQH7tBn4cFT34B4EiRX90AlCcWZxHyqwNUaGvsU/iCdqKVlA34vtD0aGPmKt6u+WNHrGaMF5oQna+Soti9zTOZnR1PJJV94QlDR+ATTjQ6r2Uo8AknoTqvpR3rWCVE57W0PXxChETntTQCfULMOk6mjcAnxITovHYsBD7hjVTntWMs8IlginReW/A0wCcymUwG5eAfUKaZTFQY/x4AAAAASUVORK5CYII="
+                                        alt="instagram-new--v1"
+                                    />
+                                </div>
+                                <p class="relative" style="font-size: 10px">
+                                    Instagram
+                                </p>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@Harsh-1737"
+                                target="_blank"
+                                class="relative group flex flex-col items-center p-1 bg-[#cbc7ff] border border-black rounded-lg text-[#1c1844] hover:bg-[#f177a4] transition"
+                            >
+                                <span
+                                    class="h-1 w-1 rounded-full bg-[#1c1844] mb-1 group-hover:hidden ml-auto"
+                                ></span>
+                                <div class="">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACb0lEQVR4nO2ZP2gUQRTGx6hgpyhx3vft4ppr/NMIHmgj2IhiY2OvoqBYCVaCFgpCaklpKQhGECysErEQhOAfgkZEAiLiFYqcimI0eqyMzOERz509dvZ2A/PBVy3cvN+993aH95QKCgoKCgoKyqdms7laRLaRPETyNIBLJK+SvAVgmuQjAPMk3wFoW38jmfb4S8+zFskXAGYATAG4QXKC5AWSxwDsB7BJ+ZDWejOAywCeAlhcEtSw/BnAPRE5lSTJmoEhSB4n+bWi4NP/eE5Etg8CYcqnU4PA0z5+LSKjeThWAnhTg4DTDI87KaIo2lGDQFOHXzlBRORwDQJNXW40Gmtd/XG26iCZw3Ec73KBXKk6SObz0UwQALcLHrCP5LPKGx7AgyIH2J9ZBeAkyfclglx3gcx6APmjOI7X21L96RsEwJQLZN4XSFcktwC44xlk1gXS8g3SA2T6Z84TSMsF8qkskO4tGsAZAB8LgvxQSq3IAlksE6RP//wq5aOIIYGQ3FAUJEmSdVkghVI+QGkVKmGSHaXUSBbI25Kb/XlBgNT2SDvzHwPw0jcIgK2+X7903YABPFkOH0SSjzNBSN4vCtLTB+0SAFJbWnddGblZ5AAROWimI2UB8K+vuTIyPoQgfGTkoisjJ6oOkjkcRdGRTBAR2btMMrLHBTJa41FQat3JNRKyI9A6Z2PaCWFBdvaZ29bCAL5HUbQ7F4iFOWAG0jWD+GCmoGpQmToEcI7kQwALFQW/YM4neV5rvVF50IjWesyM+83Y347/JwBM2rXAjF0TtLqrA7NGGGCtMLl0raC1Hsu84QYFBQUFBQWpf/QbneYcLHUnrOMAAAAASUVORK5CYII="
+                                        alt="youtube-play"
+                                    />
+                                </div>
+                                <p class="relative" style="font-size: 10px">
+                                    Youtube
+                                </p>
+                            </a>
+                            <a
+                                href="https://github.com/Harsh1737"
+                                target="_blank"
+                                class="relative group flex flex-col items-center p-1 bg-[#cbc7ff] border border-black rounded-lg text-[#1c1844] hover:bg-[#f177a4] transition"
+                            >
+                                <span
+                                    class="h-1 w-1 rounded-full bg-[#1c1844] mb-1 group-hover:hidden ml-auto"
+                                ></span>
+                                <div class="">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEnElEQVR4nO1ZXYxdUxTexoi/+JvJvWd/3z73XhnjN6IPg2A8EAmhhBeEJl6IoKgIXisexF9KMxKJR/HgTZGhVB+J4KEVNTUdIq2/RDX1V1OMK6vdNz1zu885e9979p1G5kt2Mplzz9rrW2vttddaR6ll/E/RbDZPA3ATgGcBTAPYDmAPgP127SE5Y5/Jb25stVqnqiMB4+PjxwJYRfJdkv+QbAcueecdALeLLDVopGl6PMmHAXzXg/LOBeBbAA+1Wq3jBkJCa30tgLmqCDgI7QBwTTQC4nqS62MRcKxXxPOVkqjX6wnJTwdIom3Xx0mS1CshkSTJ6eLuJSDRtqE2Kzr0RUJrXZM0ulQkeIjMXK1W0z2RkOyxROHUzguznlI0gJeOAOXbXWsqOMWWuPoxCTut9YUk15L8pg/lZkg+aoxZYauDdSV7X+1FQlJe2T1hjEkdYbgWwJ8A3gewBsDlxpgzkyQ5URbJs+R/JO8D8AbJ3wA8oJQ6OivLGLOihMisV4jJjV1mxbzbd2Ji4hgvaxX8ttlswuPwr/GpnUrLjsovqgxqtZr2ILKr0Cu2ACyNawDnxCICYNJTh9tyhdgq1ueA3hKLCMnVnjq87RQgGcO3FAfwREQiL3sS+XtkZOTkwwRIU+Qp4Bc5kLGIaK3PBfCXpy43uIg85+mNdbFIdADgNU9dnnG9PO3zcpqmF6vIMMbc7EnkTReRWZ+4VEoNxyZC8mxPIttdRHZ7vLg7NgkByYbnGflJdUMmHR5E9iuljlKRkSTJ+dkosNMYmcL826XPvIvIgUxhjLlC6p16vT6WpulIo9Gg/N1ZgyDShWG5GmTJ3lJVpGlqMoZdDAB77cOPAGwh+ZUNtx/k78y6VUUGyamCyPijcwzESy4iX9qHmyXFAnhQ8rStYi+QdrNjldhElFJDtqRvaq3Pk0xpjFkplTPJp2QWZknNuKyw0T58UqpLks+TfB3ABwC2Wg/9LO40xtwR0xsA5u2Z+JrkNpKfAHgLwIvSC2XuvMPLFCk7PDOFrN/FU1WTAHB394EuST6PuyxxVQAREbIPwJ1VhJqdmT0dQsImpitd1jjBJwU7CH1oa55FnZ4PpHMUY9gkErrvfG5flDkn3S+tAnCXXEAFwn8k+SrJe8VSjUbjjLGxsVMyskelj5FxKMlHpLyQdjeUAA/pNJ1rIbFsQcqblB7cKlwadqKsTCgz1q9bAvt6VZ6Lw+q6Im8P2UzhUm6rPNdaX0Ty15KzM5m3gTzrlwyAHaJLYdza1JtnhZWZEmKjnYQc+IgDYCeATSSvL9zgoOfv6dMjq72mGwA+C47LMAzl7cFyb2zxrsBJXkZywSFooar7Q5JCD0QWjDGXBG0kt2iORfbKYM0O6YrjtABpmo73QGR98EY2xDaHbBRyl4j8QBLvhQwAF0GmFCGxHCo/gMS2vr8Aa61bJL9YQiKfS8eoqsDo6OhJUmkOmgiATZV/i7cxPZWTzaomskDyhaiDDgAT0h/EIoKDvc+lakAYlhSc/Y4iH/xDhQD4PvP+HID7BzFucmHItqAbOuVLCGyRusEWgD3fSctYhoqH/wAr4Srz/GpDPgAAAABJRU5ErkJggg=="
+                                        alt="github"
+                                    />
+                                </div>
+                                <p class="relative" style="font-size: 10px">
+                                    Github
+                                </p>
+                            </a>
+                            <a
+                                href="mailto:harshbit10@gmail.com"
+                                target="_blank"
+                                class="relative group flex flex-col items-center p-1 bg-[#cbc7ff] border border-black rounded-lg text-[#1c1844] hover:bg-[#f177a4] transition"
+                            >
+                                <span
+                                    class="h-1 w-1 rounded-full bg-[#1c1844] mb-1 group-hover:hidden ml-auto"
+                                ></span>
+                                <div class="">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACfUlEQVR4nO2YO4gTQRjH53ziC9G42e//n03EEEVSHGhsRBARBCsFtbBQwcbW8rC7wsLW8rRTPETsVBAtRBAURA5E8IXaiIp6oOLb8yLjzUCMIRdvd7NrmD98aXYy+/1m5nvMKuXl5eXllYVINvrBVD+BTPQFiIhsBzCetSMxbBLA0d9xAqBM8nYOnGr8o30QkV0u2DdamIUkR3PgXKMbA3BXa73aMhTMzw8AQy6LATgE4HvWjrKzjYZhuMhCrCP5tDlrnYqiaIF5KCKbSb7KgcONFvtj0UVkP8lP7dLvHRFZaQZprSMAt3LgfMPaa631VuNbtVqdT/L4dHXkTcsfTuYA4kapVKLxKYoiDeBmtwWxXdx8ywhipFarzWs68i9nUtnPmGxmYTYBeNErAABfSB60azkA4HCnJDRtiwJgLAzDVXZFAgDXegDxWGs9aN4ZBMFiAOcS6bUAvAWwza7OHJLHUoS4WC6Xl9nUuobkvaSbxgkbNwN2d/YB+JwgxKRZIKXULAuxA8C71LpfAGdbitGzBHZh3PR8akqzAQxbsNTb+PsA1toksALA1RgQY8ViseLmInml1/eR9wB2ulWcYdycbsqK6+Psrkr4XO8l+bGLXfhq0qmrU1rrA3HjTcUEcY5dqFQqS61TgySfdBj73HXctnM4kaurLoCHIlKzbcRykpfbjLseBIGk0cuppCb666IzVY2HSP60z0bq9fpcC7El6e5aJQzirp7DLm5EZLfWek8T3JE0vhOoFEDcUbvkKrRRoVBYQvL8f/k5CMAjEdlgDMCDNN+l0py8l6aydsCD0IMw16aydsCD0IMw16aydsCDsAXEy8vLy0tloF+dX5bjn0keggAAAABJRU5ErkJggg=="
+                                        alt="new-post"
+                                    />
+                                </div>
+                                <p class="relative" style="font-size: 10px">
+                                    Mail
+                                </p>
+                            </a>
+                            <a
+                                href="https://codepen.io/Harsh_1737"
+                                target="_blank"
+                                class="relative group flex flex-col items-center p-1 bg-[#cbc7ff] border border-black rounded-lg text-[#1c1844] hover:bg-[#f177a4] transition"
+                            >
+                                <span
+                                    class="h-1 w-1 rounded-full bg-[#1c1844] mb-1 group-hover:hidden ml-auto"
+                                ></span>
+                                <div class="">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFCklEQVR4nNVaa4hVVRTeXc2iqGSGuXt/3z4zt26TxO1BNUFYNBAUEUhCDyRIf0hF5K8QLKT+FIiQEQVjhi8CQehHUFT0NIPUMntoDwJ/JA2URRHiq7SZiWXb4XDae59z7rl3vC3YMJy99l7rW99+rL3uKNUFIXktgBcBfA/guGvy91qS16hel0ajMZfkBpITJKcCTfo2iK7qRQFwO4AfIwCy7WcAC1WvSLPZvIjkSyQnS4CYbgBeSZKk7//GwlRPsdOsyEJPsGOMuQPAeMShH4wx9wN41uPoGukTnQiYcbHRVRYAbIoA+Jvkc1rr80V/YGDAZHXq9bqWPtERXTcmBGiT2JzpvfC1tfaG9BhjzEBWT75l7xuSn3d97zRz9gKAEyRXDw8Pn5MdWwSIk9kAHgPwZ1f2Th4LAHYYY1qh8SWAnJIkSYYBbOsYOwVOpKMSQaXUrNg8ZYE4OQvAQyQPVWKnAAtvAhgqEpA2gZySoaEhkHy1NDuyxkmujwz8BcB9qoRUAXJaxKbYjvi1Pr0/ZwF4L8LCyyT7VUnpBBARse18CIF5VylVE8VHAgDGZampNqVTQDLLPnQRPyxA9vg6jTF3qwrSaSAi1tp7AkB2C5CjoY1dJe/x3ezyrd35kiTpI/lWAMgRFVl70n41xixuw65ccms8wXlG+spOZoxZLL7EfM0Dcrp9BODygkZbAD6NHB5fFX3uDg4OXkrynSI+/geISxUOer4fJ/lkq9WaE2Hh8ViqkbYhuiF2Wq3WHLHlbGbHH/TZ8DFypxzJJJcB+MPT/50xZjRtWGt9hWw4j+4eSSalBQ6V3TI2w+io2PCAF1+WuetiYS6Q9MRa6zqAzZ50ZRLAxiRJrgKwMhshAH+RfCIT8dnyzfVl2Vnp5toYsLVZfMkErjiQVJSuj637jGN7JT0PrXvnxGcF5/oSwE2BOcoDcSKUfpBjeMfIyMjZKkdEB8DOnLneDyWmVYHI0tieY/yTyGEwLaJTgOHtocOgytIaBbCvyHIg+Y0sxRAIa+3VOa/CqVRgpDp5W2UgLp3e4tmAE1L+tNZeRnI5gGMZB04AeDrNjmPhKfeqTOvK2OUk57mSarZKKba3iC+lgBhj7hJKrbWP+h44bjPPT0dInCD5sUd3H4CbXdvribqMmZeZa35A95D4JL6Jj7lASJ4E8HvgZbgisplrYijLTmDJHHNO1SKHwQpfHuh8O1kEiM/wtmzkQlKv15sAPozMtbNouqO1viSSKBYHAuAnkotUeamRXOWZc1WIhZiQXOR8iQI5EgDxWpXSf6xA1440Go25AF4PADmsQue5PGJU7z2s7g0EfZcAeTCyrBb0ChCSC0LLC8ADolOT12Bkn2xNJ2wzDUT/m7hujfj3xvS+c5fVWKQ0+pu1dslMA7HWLhHbARCSFY95UyJ3ce2PnA7b5TbvNhCt9cUk3474cYDkrdFJAJwnhenQD5pymXWxZFpzJdPDIRaknNvf339BkYAUYgfAFwCu6xQQrfWVkj1XYqFddlyqsLrRaJzbLhCXjsR+VpgszUIFdvZba28pC4TkjSS/7QoLIZGIAFgX+blBUvuxvr6+C/MKdKLjTsmJyIm0riMshEQi5CIVYkd+llhK8gVPv3xbmvMz3oGOs1Bh77TTOrcX2gCUd+8UbTPHQpfYOXMsdJCdM89Czsm2NvaPANInOj3FggqIq3LICSV3hLy7pcnfz0fqZpXkH75CleOLQPc5AAAAAElFTkSuQmCC"
+                                        alt="external-Codepen-social-media-those-icons-fill-those-icons"
+                                    />
+                                </div>
+                                <p class="relative" style="font-size: 10px">
+                                    Codepen
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="absolute bottom-5 py-2 text-white mix-blend-difference w-[50%] text-center"
+            >
+                Designed & built by Harsh with ❤️
+            </div>
+        </section>
+    </body>
+
+    <script src="./index.js" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"
+    ></script>
+</html>
+
+<!--  TODO: Bounce animation on header -->
